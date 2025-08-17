@@ -1,0 +1,20 @@
+# Dockerfile.frontend
+FROM image-dev-base
+WORKDIR /app/frontend
+COPY frontend/ /app/frontend
+RUN npm install
+CMD ["npm", "start"]
+
+
+FROM node:18
+
+WORKDIR /app
+
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+CMD ["npm", "start"]
