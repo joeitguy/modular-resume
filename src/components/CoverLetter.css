@@ -1,0 +1,36 @@
+.cover-letter {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+.cover-letter header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cover-letter h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.cover-letter .location,
+.cover-letter .contact {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.letter-body p {
+  margin-bottom: 1.2rem;
+}
+
+.closing {
+  margin-top: 2rem;
+  font-weight: bold;
+}

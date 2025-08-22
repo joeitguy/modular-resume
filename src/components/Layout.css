@@ -1,0 +1,112 @@
+
+header {
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1; /* expands to fill available space */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f8f5f5;
+  background-color: #f8f4f4;
+}
+
+
+
+
+.mission p {
+  max-width: 700px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.resume-header {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-size: 2rem;
+  color: #005a9c;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.resume-header h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+}
+
+.contact a {
+  color: #005a9c;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  text-align: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  min-height: 10vh;        /* full viewport height */
+  padding: 12rem;
+  box-sizing: border-box;
+  background-color: #f8f8f8; /* optional: soft background */
+  padding-top: .5in; /* ~96px */
+
+}
+
+
+
+
+.nav-wrapper {
+  display: block;
+  margin-top: 1rem; /* adds space above buttons */
+  margin-bottom: -18px;
+}
+
+.mission {
+  margin-top: -18px;
+}
