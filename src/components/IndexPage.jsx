@@ -1,8 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './IndexPage.css'; // Optional: for styling modularity
+import './IndexPage.css';
+
+const Card = ({ title, description, link }) => (
+  <div className="card">
+    <h2>{title}</h2>
+    <p>{description}</p>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      Visit Profile
+    </a>
+  </div>
+);
 
 const IndexPage = () => {
+  const cards = [
+    {
+      title: 'LinkedIn',
+      description: 'Get to see other interests, likes, and followings.',
+      link: 'https://www.linkedin.com/in/joe-bodden/',
+    },
+    {
+      title: 'GitHub',
+      description: 'More details on the build of this application.',
+      link: 'https://github.com/joeitguy/modular-resume',
+    },
+    {
+      title: 'GitHub Other Projects',
+      description: 'More details on other projects.',
+      link: 'https://github.com/joeitguy/',
+    },
+  ];
+
   return (
     <div className="index-container">
       <header className="hero">
@@ -11,32 +38,9 @@ const IndexPage = () => {
       </header>
 
       <section className="grid-section">
-        <div className="card">
-          <h2>LinkedIn</h2>
-          <p>Get to see other interests, likes, and followings.</p>
-          <a
-            href="https://www.linkedin.com/in/joe-bodden/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Profile
-          </a>
-        </div>
-      </section>
-
-
-      <section className="grid-section">
-        <div className="card">
-          <h2>GitHuB</h2>
-          <p>Get to see other interests, likes, and followings.</p>
-          <a
-            href="https://github.com/joeitguy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Profile
-          </a>
-        </div>
+        {cards.map((card, index) => (
+          <Card key={index} {...card} />
+        ))}
       </section>
 
       <footer className="footer">
