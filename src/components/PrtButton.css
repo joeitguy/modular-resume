@@ -7,7 +7,7 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 1rem;
+  margin: 1rem 16px 0; /* top: 1rem, left/right: 6px, bottom: 0 */
 }
 
 .prt-button:hover {
@@ -18,4 +18,12 @@
   .prt-button {
     display: none; /* hide button when printing */
   }
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* adds ⅛ inch spacing between buttons */
+  margin-top: 1rem;
+  margin-bottom: -18px;
 }

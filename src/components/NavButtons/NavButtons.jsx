@@ -8,17 +8,20 @@ export default function NavButtons() {
 
   return (
     <div className="nav-buttons">
-      <button className="nav-btn" onClick={() => navigate('/resume')}>
+      <button className="nav-btn resume-btn" onClick={() => navigate('/resume')}>
         📄 Resume
       </button>
-      <button className="nav-btn" onClick={() => navigate('/coverletter')}>
+           <button className="nav-btn cover-btn" onClick={() => navigate('/coverletter')}>
         📝 Cover Letter
       </button>
-      <button className="nav-btn" onClick={() => navigate('/SkillsSummary')}>
+      <button className="nav-btn skills-btn" onClick={() => navigate('/SkillsSummary')}>
         🎬 Technical Skills
       </button>
-      <button className="nav-btn" onClick={() => navigate('/ReadmePage')}>
+      <button className="nav-btn readme-btn" onClick={() => navigate('/ReadmePage')}>
         🎬 Read Me
+      </button>
+            <button className="nav-btn home-btn" onClick={() => navigate('/IndexPage')}>
+        🎬 Home
       </button>
       
     </div>

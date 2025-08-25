@@ -11,10 +11,8 @@ function Layout({ children }) {
           <p className="contact">
             <a href="mailto:joeitguy@gmail.com">joeitguy@gmail.com</a> · (619) 438-3236 · San Diego, CA ·{' '}
             <a href="https://www.linkedin.com/in/joe-bodden/">LinkedIn</a>
-            <br />
-            <span className="nav-wrapper">
-              <NavButtons />
-            </span>
+
+
           </p>
       </header>
       <section className="mission">
@@ -22,7 +20,11 @@ function Layout({ children }) {
           <strong>
              “Built to support. Wired to solve.”
             ______________________________________________________________
+
           </strong>
+                      <span className="nav-wrapper">
+              <NavButtons />
+            </span>
         </p>
       </section>
 
